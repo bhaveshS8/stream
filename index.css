@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    height: 10%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid white;
+}
+.logo-holder{
+    margin: 1%;
+    align-self: flex-start;
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-holder img{
+    width: 55%;
+}
+.nav-holder{
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+.nav-holder nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.nav-holder a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 0.5rem;
+    margin: 0% 2%;
+    transition: ease-in-out 0.2s;
+}
+.nav-holder a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 7px rgb(186, 176, 176);
+    scale: 1.2;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    position: relative;
+}
+.hero-video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-video video{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.hero-content{
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    z-index: 12;
+    height: 50%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 40px;
+    line-height: 2;
+}
+.hero-content button{
+    margin-top: 3%;
+    width: 15%;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    padding: 1%;
+    font-size: 1.2rem;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size:30px;
+    width: 100%;
+    margin-top: -7%;
+    padding-left: 3%;
+}
+.movie-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+}
+.movie-card{
+    
+}
+
+@media screen and (min-width:360px) and (max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+    .logo-holder{
+        width: 100%;
+    }
+    .logo-holder img{
+        width: 10%;
+    }
+    .hero-content{
+        font-size: 14px;
+        top: 3%;
+    }
+    .hero-content button{
+        width: 35%;
+        font-size: 14px;
+    }
+    .hero-video video{
+        height: 90%;
+    }
+    .trending{
+        font-size: 12px;
+        margin-top: 0%;
+    }
+}
