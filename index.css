@@ -1,153 +1,156 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-body{
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    border: 1px solid white;
-    height: 100%;
-    width: 100%;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-holder">
+        <img src="logo3.png" alt="" />
+        <h2>Stream</h2>
+      </div>
+      <div class="nav-holder">
+        <nav>
+          <a href="">Home</a>
+          <a href="">Movies</a>
+          <a href="">Plays</a>
+          <a href="">About</a>
+        </nav>
+      </div>
+    </header>
 
-header{
-    display: flex;
-    height: 10%;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: 1px solid white;
-}
-.logo-holder{
-    margin: 1%;
-    align-self: flex-start;
-    width: 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.logo-holder img{
-    width: 55%;
-}
-.nav-holder{
-    margin: 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 80%;
-}
-.nav-holder nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-.nav-holder a{
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
-    padding: 0.5rem;
-    margin: 0% 2%;
-    transition: ease-in-out 0.2s;
-}
-.nav-holder a:hover{
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 7px rgb(186, 176, 176);
-    scale: 1.2;
-}
-
-.main{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 70%;
-}
-.hero{
-    display: flex;
-    flex-direction: column;
-    height: 40%;
-    position: relative;
-}
-.hero-video{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.hero-video video{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-}
-.hero-content{
-    position: absolute;
-    top: 25%;
-    left: 7%;
-    z-index: 12;
-    height: 50%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    font-size: 40px;
-    line-height: 2;
-}
-.hero-content button{
-    margin-top: 3%;
-    width: 15%;
-    background: transparent;
-    border: 1px solid white;
-    border-radius: 12px;
-    color: white;
-    padding: 1%;
-    font-size: 1.2rem;
-}
-
-.trending{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size:30px;
-    width: 100%;
-    margin-top: -7%;
-    padding-left: 3%;
-}
-.movie-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1;
-    width: 100%;
-}
-.movie-card{
+    <main class="main">
+      <section class="hero">
+        <div class="hero-img">
+          <img src="https://images.pexels.com/photos/9807277/pexels-photo-9807277.jpeg" alt="">
+        </div>
     
-}
+        <div class="hero-content">
+          <h1>Welcome to Stream</h1>
+          <p>Your favorite movie streaming platform</p>
+          <button>Get Started</button>
+        </div>
+      </section>
 
-@media screen and (min-width:360px) and (max-width: 768px){
-    header{
-        flex-direction: column;
-    }
-    .logo-holder{
-        width: 100%;
-    }
-    .logo-holder img{
-        width: 10%;
-    }
-    .hero-content{
-        font-size: 14px;
-        top: 3%;
-    }
-    .hero-content button{
-        width: 35%;
-        font-size: 14px;
-    }
-    .hero-video video{
-        height: 90%;
-    }
-    .trending{
-        font-size: 12px;
-        margin-top: 0%;
-    }
-}
+      <section class="trending">
+        <div class="heading">
+          <h2>Trending Movies</h2>
+        </div>
+        <div class="movie-list">
+          <div class="movie-card">
+            <img src="poster1.png" alt="" />
+            <p>Last Astronaut</p>
+          </div>
+          <div class="movie-card">
+            <img src="poster2.png" alt="" />
+            <p>Into the Forest</p>
+          </div>
+          <div class="movie-card">
+            <img src="poster3.png" alt="" />
+            <p>Among Living</p>
+          </div>
+          <div class="movie-card">
+            <img src="poster4.png" alt="" />
+            <p>The Terror</p>
+          </div>
+          <div class="movie-card">
+            <img src="poster5.jpg" alt="" />
+            <p>Spider-man</p>
+          </div>
+          <div class="movie-card">
+            <img src="poster6.png" alt="" />
+            <p>Summer Vacation</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="trending">
+        <div class="heading">
+          <h2>Trending Plays</h2>
+        </div>
+        <div class="movie-list">
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/09/william-shakespeare-67767_1280.jpg" alt="" />
+            <p>Richard III</p>
+          </div>
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/02/william-shakespeare-67764_1280.jpg" alt="" />
+            <p>Macbeth</p>
+          </div>
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/09/william-shakespeare-67768_1280.jpg" alt="" />
+            <p>Hamlet</p>
+          </div>
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2022/01/20/16/31/desert-6952778_1280.jpg" alt="" />
+            <p>The Terror</p>
+          </div>
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2018/01/17/20/34/water-3088972_1280.png" alt="" />
+            <p>Paws</p>
+          </div>
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2022/04/17/20/44/film-noir-7138980_1280.jpg" alt="" />
+            <p>Summer Vacation</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="trending">
+        <div class="heading">
+          <h2>Popular This Year</h2>
+        </div>
+        <div class="movie-list">
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2022/04/17/20/44/film-noir-7138980_1280.jpg" alt="" />
+            <p>Summer Vacation</p>
+          </div>
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/02/william-shakespeare-67764_1280.jpg" alt="" />
+            <p>Macbeth</p>
+          </div>
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/09/william-shakespeare-67768_1280.jpg" alt="" />
+            <p>Hamlet</p>
+          </div>
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2022/01/20/16/31/desert-6952778_1280.jpg" alt="" />
+            <p>The Terror</p>
+          </div>
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/09/william-shakespeare-67767_1280.jpg" alt="" />
+            <p>Richard III</p>
+          </div>
+          <div class="movie-card">
+            <img src="https://cdn.pixabay.com/photo/2018/01/17/20/34/water-3088972_1280.png" alt="" />
+            <p>Paws</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer-sec">
+        <div class="footer-list">
+          <ul>
+            <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-square-whatsapp"></i></a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-list">
+         &copy;2025
+        </div>
+
+        <div></div>
+      </section>
+    </footer>
+  </body>
+</html>
+
