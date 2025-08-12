@@ -1,156 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <header>
-      <div class="logo-holder">
-        <img src="logo3.png" alt="" />
-        <h2>Stream</h2>
-      </div>
-      <div class="nav-holder">
-        <nav>
-          <a href="">Home</a>
-          <a href="">Movies</a>
-          <a href="">Plays</a>
-          <a href="">About</a>
-        </nav>
-      </div>
-    </header>
 
-    <main class="main">
-      <section class="hero">
-        <div class="hero-img">
-          <img src="https://images.pexels.com/photos/9807277/pexels-photo-9807277.jpeg" alt="">
-        </div>
-    
-        <div class="hero-content">
-          <h1>Welcome to Stream</h1>
-          <p>Your favorite movie streaming platform</p>
-          <button>Get Started</button>
-        </div>
-      </section>
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    backdrop-filter: blur(8px) brightness(0.9) ;
+    z-index: 4;
+    position: fixed;
+    display: flex;
+    height: 9%;
+    padding-bottom: 6%;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid white;
+}
+.logo-holder{
+    margin: 1%;
+    align-self: flex-start;
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-holder img{
+    width: 55%;
+}
+.nav-holder{
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-holder nav{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+}
+.nav-holder nav a{
+    text-decoration: none;
+    text-shadow: 3px rgb(57, 38, 3);
+    color: white;
+    font-size: 26px;
+    padding: 0.5rem;
+    margin: 0% 7%;
+    transition: ease-in-out 0.2s;
+}
+.nav-holder a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 7px rgb(186, 176, 176);
+    scale: 1.2;
+}
 
-      <section class="trending">
-        <div class="heading">
-          <h2>Trending Movies</h2>
-        </div>
-        <div class="movie-list">
-          <div class="movie-card">
-            <img src="poster1.png" alt="" />
-            <p>Last Astronaut</p>
-          </div>
-          <div class="movie-card">
-            <img src="poster2.png" alt="" />
-            <p>Into the Forest</p>
-          </div>
-          <div class="movie-card">
-            <img src="poster3.png" alt="" />
-            <p>Among Living</p>
-          </div>
-          <div class="movie-card">
-            <img src="poster4.png" alt="" />
-            <p>The Terror</p>
-          </div>
-          <div class="movie-card">
-            <img src="poster5.jpg" alt="" />
-            <p>Spider-man</p>
-          </div>
-          <div class="movie-card">
-            <img src="poster6.png" alt="" />
-            <p>Summer Vacation</p>
-          </div>
-        </div>
-      </section>
+.main{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-img{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.hero-content{
+    position: absolute;
+    width: 70%;
+    align-items: flex-start;
+    margin-left: -7%;
+    text-align: left;
+    font-size: 29px;
+    text-shadow: 2px 2px rgb(95, 62, 3);
+    line-height: 3;
+    color: white;
+    z-index: 2;
+}
+.hero-content button{
+    font-size: 18px;
+    padding: 1.2%;
+    border: 1px solid white;
+    border-radius: 7px;
+    background-color: transparent;
+    color: white;
+}
+.hero-content button:hover{
+    scale: 1.2;
+    color: rgb(222, 183, 28);
+    box-shadow: 3px 3px 2px rgb(233, 216, 32);
+    transition: ease-in-out 0.7s;
+}
 
-      <section class="trending">
-        <div class="heading">
-          <h2>Trending Plays</h2>
-        </div>
-        <div class="movie-list">
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/09/william-shakespeare-67767_1280.jpg" alt="" />
-            <p>Richard III</p>
-          </div>
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/02/william-shakespeare-67764_1280.jpg" alt="" />
-            <p>Macbeth</p>
-          </div>
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/09/william-shakespeare-67768_1280.jpg" alt="" />
-            <p>Hamlet</p>
-          </div>
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2022/01/20/16/31/desert-6952778_1280.jpg" alt="" />
-            <p>The Terror</p>
-          </div>
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2018/01/17/20/34/water-3088972_1280.png" alt="" />
-            <p>Paws</p>
-          </div>
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2022/04/17/20/44/film-noir-7138980_1280.jpg" alt="" />
-            <p>Summer Vacation</p>
-          </div>
-        </div>
-      </section>
+.trending{
+    position: relative;
+    margin: 3% 0% 0% 0%;
+    width: 80%;
+    height: 30%;
+}
+.heading{
+    margin: 3% 0% 3% 0%;
+}
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.movie-card{
+    width: 14%;
+    height: 35vh;
+    border-radius: 6px;
+    padding: 1.5%;
+    box-shadow: 1px 1px 8px white;
+    display: grid;
+    text-align: center;
+}
+.movie-card p{
+    padding: 2%;
+}
+.movie-card:hover{
+    box-shadow: 2px 2px 8px orange;
+    scale: 1.04;
+}
+.movie-card img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
-      <section class="trending">
-        <div class="heading">
-          <h2>Popular This Year</h2>
-        </div>
-        <div class="movie-list">
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2022/04/17/20/44/film-noir-7138980_1280.jpg" alt="" />
-            <p>Summer Vacation</p>
-          </div>
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/02/william-shakespeare-67764_1280.jpg" alt="" />
-            <p>Macbeth</p>
-          </div>
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/09/william-shakespeare-67768_1280.jpg" alt="" />
-            <p>Hamlet</p>
-          </div>
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2022/01/20/16/31/desert-6952778_1280.jpg" alt="" />
-            <p>The Terror</p>
-          </div>
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2012/11/28/12/09/william-shakespeare-67767_1280.jpg" alt="" />
-            <p>Richard III</p>
-          </div>
-          <div class="movie-card">
-            <img src="https://cdn.pixabay.com/photo/2018/01/17/20/34/water-3088972_1280.png" alt="" />
-            <p>Paws</p>
-          </div>
-        </div>
-      </section>
-    </main>
+.footer{
+    border-top:1px solid grey ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 90%;
+    margin: 3%;
+}
+.footer-sec{
+    height: 100%;
+    width: 100%;
+}
+.footer-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.footer ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-list ul li{
+    margin: 3%;
+    font-size: 2rem;
+    height: 30px;
+    width: 35px;
+}
+@media screen and (min-width:360px) and (max-width: 768px){
+    header{
+        flex-direction: column;
+        height:auto;
+        width: auto;
+        margin: 0%;
+        padding: 0%;
+        align-items:center ;
+    }
 
-    <footer class="footer">
-      <section class="footer-sec">
-        <div class="footer-list">
-          <ul>
-            <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-square-whatsapp"></i></a></li>
-          </ul>
-        </div>
-  
-        <div class="footer-list">
-         &copy;2025
-        </div>
+    .logo-holder{
+        width: 100%;
+        height: 10%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .logo-holder img{
+        width: 20%;
+    }
+    nav{
+        width: 90%;
+    }
+    .nav-holder nav a{
+        font-size: 18px;
+        margin: 0% 0.4%;
+    }
 
-        <div></div>
-      </section>
-    </footer>
-  </body>
-</html>
+    .hero{
+        height: 70vh;
+    }
+    .hero-content{
+        height: 30%;
+        font-size: 18px
+    }
+    .hero-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hero-content button{
+        font-size: 11px;
+        padding: 3%;
+    }
 
+    .movie-card{
+        margin: 3%;
+        height: 20vh;
+        justify-content: center;
+        width: 25%;
+    }
+}
