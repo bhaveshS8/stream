@@ -227,7 +227,7 @@ header{
     header{
         flex-direction: column;
         height:auto;
-        width: auto;
+        width: 100%;
         margin: 0%;
         padding: 0%;
         align-items:center ;
@@ -295,4 +295,5 @@ header{
     }
     
 }
+
 
