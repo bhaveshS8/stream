@@ -153,7 +153,7 @@ header{
     transition: ease-in-out 0.4s;
 }
 .movie-card p{
-    padding: 2%;
+    padding-top: 2%;
 }
 .movie-card:hover{
     box-shadow: 2px 2px 8px orange;
@@ -295,3 +295,4 @@ header{
     }
     
 }
+
