@@ -294,5 +294,8 @@ header{
         font-size: 14px;
         width: 90%;
     }
-    
+    .para{
+        padding:7%;
+    }
 }
+
